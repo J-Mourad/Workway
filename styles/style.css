@@ -1,0 +1,708 @@
+/* Font Definitions */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 div,
+h2 div,
+h3 div,
+h4 div,
+h5 div,
+h6 div {
+    font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+p,
+span,
+label,
+a,
+button,
+strong,
+div,
+em {
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* Main Menu Section */
+#mainMenu {
+    text-align: center;
+    word-break: break-word;
+}
+
+#mainMenu .floatingToolbox {
+    z-index: 10000 !important;
+}
+
+#mainMenu .overlay ul {
+    height: auto;
+}
+
+#menuButtonWrap {
+    text-align: center;
+}
+
+.menuButton {
+    font-size: 32px;
+    color: white;
+    border: none;
+}
+
+#trigger-overlay {
+    position: absolute;
+    z-index: 100;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+}
+
+#close-menu {
+    position: fixed;
+    font-size: 30px;
+    top: 50px;
+    right: 50px;
+    background: transparent;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+#close-menu:hover {
+    opacity: 0.7;
+}
+
+.closeMenuIcon {
+    text-shadow: 1px 1px 2px black;
+}
+
+#menuOverlaySection {
+    display: table;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, rgb(185, 38, 0), rgba(185, 38, 0, 0.6), rgba(185, 38, 0, 0.4));
+    text-shadow: 1px 1px 2px black;
+}
+
+.overlay-contentpush,
+.overlay-contentpush.close {
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: visibility 0s 0.5s, opacity 0.8s ease-in;
+    opacity: 0;
+}
+
+.overlay-contentpush.open {
+    visibility: visible;
+    transition: transform 0.5s, opacity 0.8s ease-in;
+    opacity: 1;
+}
+
+#menuTitle {
+    font-size: 45px;
+    color: white;
+    width: 100%;
+    line-height: normal;
+}
+
+#menuItems {
+    margin-top: 30px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+#menuItems .menuItemLi {
+    width: 100%;
+    min-height: 35px;
+    text-align: center;
+}
+
+#menuItems .menuItemLi a {
+    color: white;
+    font-size: 24px;
+    transition: 0.3s;
+    padding: 0;
+}
+
+#menuItems .menuItemLi a:hover,
+#menuItems .menuItemLi a:focus {
+    background: transparent;
+    opacity: 0.7;
+}
+
+#menuIcons {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#menuIcons .menuItemA {
+    color: white;
+    font-size: 22px;
+    display: inline;
+    padding: 0 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#menuIcons .menuItemA:hover {
+    opacity: 0.7;
+    background: transparent;
+}
+
+@media only screen and (max-width : 767px) {
+    #close-menu {
+        right: 15px;
+    }
+}
+
+/* Header Section */
+header {
+    background: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjE1M3wwfDF8c2VhcmNofDJ8fHdvcmtpbmd8ZW58MHx8fHwxNzUwNjg1Mjk2fDA&ixlib=rb-4.1.0&q=80&w=1080') center center / cover no-repeat fixed;
+}
+
+#headerContent {
+    color: white;
+    overflow: hidden;
+    word-break: break-word;
+}
+
+#headerOuterRow {
+    display: flex;
+}
+
+#headerTitle {
+    font-size: 112px;
+    margin-top: 0;
+}
+
+#headerSubtitle {
+    font-size: 36px;
+}
+
+#iconContainer {
+    text-align: center;
+}
+
+.headerIcon {
+    padding-top: 5px;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    margin: 15px;
+    transition: 0.3s;
+}
+
+.headerIcon:hover {
+    opacity: 0.6;
+}
+
+@media only screen and (max-width : 800px) {
+    #headerTitle {
+        font-size: 40px;
+    }
+
+    #headerSubtitle {
+        font-size: 20px;
+    }
+
+    .headerIcon {
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+    }
+}
+
+/* About Section */
+#about {
+    color: black;
+}
+
+#aboutContainer {
+    background: rgb(255, 255, 255);
+}
+
+#about .aboutImageBg {
+    color: white;
+}
+
+#aboutTitleWrap {
+    margin-bottom: 40px;
+}
+
+#aboutTitle {
+    margin: 10px 0;
+}
+
+.aboutParagraph {
+    line-height: 1.65;
+}
+
+#aboutButtons {
+    text-align: right;
+    margin-top: 36px;
+}
+
+.aboutButton {
+    color: black;
+    padding: 6px 42px;
+    border: 2px solid black;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.aboutButton:focus {
+    color: black;
+}
+
+#about .aboutImageBg .aboutButton {
+    color: white;
+    border-color: white;
+}
+
+.aboutButton:hover {
+    color: white;
+    background-color: rgb(185, 38, 0);
+    text-decoration: none;
+    border-color: rgb(185, 38, 0);
+}
+
+@media only screen and (max-width : 991px) {
+    .aboutButton {
+        padding: 6px 30px;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    #aboutParagraph1 {
+        margin-bottom: 24px;
+    }
+}
+
+/* Jobs Section */
+#jobs {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+#jobsTitle {
+    font-size: 44px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#jobsTitleHr {
+    border: 2px solid rgb(185, 38, 0);
+    width: 15%;
+    margin: 0 auto 50px auto;
+}
+
+#jobListingsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 15px;
+}
+
+.job-card {
+    background: #f9f9f9;
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    padding: 30px;
+    flex-basis: 350px;
+    flex-grow: 1;
+    max-width: 400px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h3 {
+    font-size: 24px;
+    margin-top: 0;
+    color: #333;
+}
+
+.job-meta {
+    margin-bottom: 15px;
+    color: #777;
+    font-size: 14px;
+}
+
+.job-meta span {
+    margin-right: 20px;
+}
+
+.job-meta i {
+    margin-right: 5px;
+    color: #aaa;
+}
+
+.job-card p {
+    line-height: 1.6;
+    color: #555;
+}
+
+.job-apply-btn {
+    display: inline-block;
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(185, 38, 0);
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.job-apply-btn:hover {
+    background-color: rgba(185, 38, 0, 0.8);
+    color: white;
+}
+
+/* Testimonial Section */
+#testimonial {
+    color: black;
+}
+
+#testimonialContainer {
+    background: url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80') center center / cover no-repeat fixed;
+}
+
+#testimonial .testimonialImageBg {
+    color: white;
+}
+
+#testimonialContent {
+    word-wrap: break-word;
+    padding-bottom: 120px;
+}
+
+#testimonialTitleWrap {
+    margin-bottom: 15px;
+}
+
+#testimonialTitle {
+    font-size: 45px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#testimonialSubtitleWrap {
+    margin-bottom: 20px;
+}
+
+#testimonialSubtitle {
+    font-size: 22px;
+    margin: 0;
+    font-style: italic;
+}
+
+#testimonialHrWrap {
+    margin-bottom: 20px;
+}
+
+#testimonialHr {
+    border: 2px solid rgba(185, 38, 0, 0.8);
+    width: 15%;
+    margin: 10px auto;
+}
+
+#testimonial .testimonialImageBg #testimonialHr {
+    border-color: white;
+}
+
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+}
+
+#quote-carousel .carousel-control {
+    background: none;
+    color: rgb(185, 38, 0);
+    font-size: 35px;
+    text-shadow: none;
+    margin-top: 30px;
+}
+
+#testimonial .testimonialImageBg #quote-carousel .carousel-control {
+    color: white;
+}
+
+#quote-carousel .carousel-control.left {
+    left: -12px;
+    top: 30px;
+}
+
+#quote-carousel .carousel-control.right {
+    right: -12px;
+    top: 30px;
+}
+
+#quote-carousel .carousel-indicators {
+    bottom: -70px;
+}
+
+#quote-carousel .carousel-indicators li {
+    background: rgba(185, 38, 0, 0.3);
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    margin: 6px 4px 0;
+}
+
+#quote-carousel .carousel-indicators .active {
+    background: rgb(185, 38, 0);
+}
+
+#testimonial .testimonialImageBg #quote-carousel .carousel-indicators .active {
+    background: white;
+}
+
+.testimonialCarouselIcons {
+    cursor: pointer;
+}
+
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+
+blockquote p:before {
+    display: none;
+}
+
+.testimonialCard {
+    color: white;
+    margin-top: 20px;
+    background-color: rgba(185, 38, 0, 0.8);
+    border-radius: 2px;
+    padding: 15px 10px;
+}
+
+.testimonialParaWrap {
+    margin-bottom: 30px;
+}
+
+.testimonialParagraph {
+    font-size: 18px;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.blockquoteSource {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 0;
+    display: block;
+}
+
+@media (max-width: 767px) {
+    #testimonialTitle {
+        font-size: 30px;
+    }
+
+    #testimonialSubtitle {
+        font-size: 18px;
+    }
+
+    #quote-carousel .carousel-indicators {
+        bottom: -75px;
+    }
+
+    #quote-carousel .carousel-control.left,
+    #quote-carousel .carousel-control.right {
+        top: 60px;
+    }
+}
+
+/* Blog Section */
+#blog {
+    color: black;
+    word-break: break-word;
+}
+
+#blogContainer {
+    background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80') center center / cover no-repeat fixed;
+}
+
+#blog .blogImageBg {
+    color: white;
+}
+
+#blogContent {
+    text-align: center;
+    word-wrap: break-word;
+}
+
+#noPostBlog {
+    margin-top: 60px;
+}
+
+#blogTitle {
+    font-size: 45px;
+}
+
+.aboutButton.blog {
+    color: white;
+    border-color: white;
+}
+
+.aboutButton.blog:hover {
+    color: black;
+    background: white;
+}
+
+@media only screen and (max-width : 767px) {
+    #noPostBlogTitle {
+        font-size: 25px;
+    }
+}
+
+/* Contact Section */
+#contact {
+    color: black;
+    padding-bottom: 80px;
+    /* Add padding to prevent overlap with footer */
+}
+
+#contactContainer {
+    background: rgb(255, 255, 255);
+}
+
+#contact .contactImageBg {
+    color: white;
+}
+
+#contactContent {
+    word-wrap: break-word;
+    text-align: center;
+}
+
+#contactTitle {
+    margin-top: 0;
+    font-size: 40px;
+}
+
+#contactTitleHr {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 15%;
+}
+
+#contact .contactImageBg #contactTitleHr {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+#contactSubtitleWrap {
+    margin-bottom: 70px;
+}
+
+#contactSubtitle {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.contactFormInput {
+    color: black;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: none;
+    border-radius: 0;
+}
+
+#contact .contactImageBg .contactFormInput {
+    border-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.contactLabel {
+    color: black;
+    width: 100%;
+    text-align: left;
+}
+
+#contact .contactImageBg .contactLabel {
+    color: white;
+}
+
+#contactMessage {
+    text-transform: capitalize;
+    height: 100px;
+    resize: none;
+}
+
+#contactButtons {
+    margin-top: 20px;
+}
+
+.contactButton {
+    color: white;
+    font-size: 16px;
+    padding: 8px 45px;
+    background-color: rgb(185, 38, 0);
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+}
+
+.contactButton:focus,
+.contactButton:hover {
+    color: white;
+    background-color: rgba(185, 38, 0, 0.8);
+    text-decoration: none;
+}
+
+#contact .contactImageBg .contactButton,
+#contact .contactImageBg .contactButton:focus {
+    color: black;
+    background-color: white;
+}
+
+#contact .contactImageBg .contactButton:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media only screen and (max-width : 767px) {
+    #contactTitle {
+        font-size: 38px;
+    }
+
+    #contactSubtitle {
+        font-size: 20px;
+    }
+
+    .contactInputWrap {
+        margin-top: 5px;
+    }
+}
+
+/* Footer Section */
+#footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+#footer h4.pageFooter {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+}

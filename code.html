@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="The easiest way to find work. Bridging the gap between talented professionals and innovative companies.">
+    <title>workway</title>
+    <link rel="icon" href="https://heyleia.com/images/favicon.png">
+
+    <!-- CDN CSS Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+    <!-- Custom Stylesheet -->
+    <link href="./styles/leia.css" rel="stylesheet">
+    <link href="./styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="mainMenu">
+        
+        <div id="menuOverlaySection" class="overlay overlay-contentpush">
+            <div id="menuOuterRow" class="row innerTableContent">
+                <div id="menuBorder" class="col-lg-6 col-lg-offset-3 col-sm-offset-0 col-xs-12"
+                    style="max-height: 100vh;">
+                    <button id="close-menu" class="overlay-close"
+                        onclick="document.getElementById('menuOverlaySection').className = 'overlay overlay-contentpush'">
+                        <i class="closeMenuIcon fa fa-times" aria-hidden="true"></i>
+                    </button>
+                    <a id="menuTitle" class="navbar-brand page-scroll" href="#">workway</a>
+                    <ul id="menuItems" class="nav navbar-nav">
+                        <li class="menuItemLi"><a class="menuItemA" href="#about">About</a></li>
+                        <li class="menuItemLi"><a class="menuItemA" href="#jobs">Jobs</a></li>
+                        <li class="menuItemLi"><a class="menuItemA" href="#contact">Contact</a></li>
+                    </ul>
+                    <ul id="menuIcons" class="nav navbar-nav">
+                        <li class="menuItemLi">
+                            <a class="menuItemA" href="https://web.facebook.com/profile.php?id=61577772480148"
+                                target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a class="menuItemA" href="https://twitter.com" target="_blank"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="menuItemA" href="https://instagram.com" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div id="menuButtonWrap">
+            <button class="menuButton" id="trigger-overlay"
+                onclick="document.getElementById('menuOverlaySection').className = 'overlay overlay-contentpush open'">
+                <i class="openMenuIcon fas fa-list" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="sectionOverlay" id="headerOverlay" style="background: rgba(0, 0, 0, 0.3)"></div>
+        <div id="outerHeader">
+            <div id="headerContainer">
+                <div id="headerContent">
+                    <div id="headerOuterRow" class="row">
+                        <div id="leftSide" class="outerGrid col-sm-7 col-sm-offset-1 col-xs-7 col-xs-offset-1">
+                            <div class="innerGridTable">
+                                <div id="headerLeftInner" class="innerTableContent">
+                                    <div id="headerTitleWrap">
+                                        <h1 id="headerTitle">workway</h1>
+                                    </div>
+                                    <div id="headerSubtitleWrap">
+                                        <h3 id="headerSubtitle">the easyest way to find work</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="iconContainer" class="outerGrid col-sm-1 col-sm-offset-1 col-xs-1 col-xs-offset-1">
+                            <div class="innerGridTable">
+                                <div class="innerTableContent">
+                                    <div><a href="https://web.facebook.com/profile.php?id=61577772480148"
+                                            target="_blank" style="color:white;"><i
+                                                class="headerIcon fab fa-facebook-f"></i></a></div>
+                                    <div><i class="headerIcon far fa-address-book"
+                                            onclick="window.location.href = 'tel:+212649045351'"></i></div>
+                                    <div><i class="headerIcon fas fa-envelope"
+                                            onclick="window.location.href = 'mailto:workway163@gmail.com'"></i></div>
+                                    <div><a href="https://instagram.com" target="_blank" style="color:white;"><i
+                                                class="headerIcon fab fa-instagram"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="sectionOverlay" id="aboutOverlay" style="background: rgba(0, 0, 0, 0.3);"></div>
+        <div id="outerAbout" class="outerSection">
+            <div id="aboutContainer" class="sectionContainer">
+                <div id="aboutContent" class="sectionContent container">
+                    <div class="row">
+                        <div class="col-sm-8 col-lg-offset-3 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                            <div id="aboutTitleWrap">
+                                <h2 id="aboutTitle">About us</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="aboutParagraph1Wrap"
+                            class="col-lg-3 col-lg-offset-3 col-sm-4 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                            <p id="aboutParagraph1" class="aboutParagraph">At workway, we believe that finding the right
+                                job should be an empowering and straightforward experience. Our mission is to bridge the
+                                gap between talented professionals and innovative companies, creating a seamless pathway
+                                to career growth. We've designed our platform to eliminate the usual complexities of the
+                                job hunt, offering intuitive tools and a curated selection of opportunities so you can
+                                focus on what truly matters: finding a role where you can thrive.</p>
+                        </div>
+                        <div class="col-lg-3 col-lg-offset-0 col-sm-4 col-xs-10 col-xs-offset-1">
+                            <p id="aboutParagraph2" class="aboutParagraph">Our approach is built on a foundation of
+                                quality and dedication. For job seekers, workway is more than just a listings board—it's
+                                a launchpad for your next great career move. For employers, we provide direct access to
+                                a pool of motivated and skilled candidates ready to make an impact. We are a team of
+                                passionate individuals committed to fostering meaningful professional connections and
+                                ensuring that your journey to finding or filling a position is both successful and
+                                rewarding.</p>
+                            <div id="aboutButtons"><a class="aboutButton">Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="jobs">
+        <div class="sectionContainer">
+            <div class="sectionContent container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <h2 id="jobsTitle">Job Listings</h2>
+                        <hr id="jobsTitleHr">
+                    </div>
+                </div>
+                <div id="jobListingsContainer" class="row">
+                    <div class="job-card">
+                        <h3>Senior Web Developer</h3>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Remote</span>
+                            <span><i class="fas fa-clock"></i> Full-time</span>
+                        </div>
+                        <p>We are looking for an experienced Senior Web Developer to join our dynamic team. The ideal
+                            candidate will be proficient in modern web technologies and have a passion for creating
+                            beautiful, functional websites.</p>
+                        <a href="https://www.linkedin.com/jobs/search/?currentJobId=4220212389&keywords=senior%20web%20developer&origin=JOB_SEARCH_PAGE_SEARCH_BUTTON"
+                            target="_blank" class="job-apply-btn">Apply Now</a>
+                    </div>
+                    <div class="job-card">
+                        <h3>UI/UX Designer</h3>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> New York, NY</span>
+                            <span><i class="fas fa-clock"></i> Full-time</span>
+                        </div>
+                        <p>Seeking a creative UI/UX Designer to craft amazing user experiences. You will be responsible
+                            for creating user-centered designs, from concept to execution, across multiple platforms.
+                        </p>
+                        <a href="https://www.linkedin.com/jobs/search/?currentJobId=4205213766&keywords=UI%2FUX%20Designer&origin=JOB_SEARCH_PAGE_SEARCH_BUTTON"
+                            target="_blank" class="job-apply-btn">Apply Now</a>
+                    </div>
+                    <div class="job-card">
+                        <h3>Customer Support Specialist</h3>
+                        <div class="job-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Casablanca, MA</span>
+                            <span><i class="fas fa-clock"></i> Part-time</span>
+                        </div>
+                        <p>Join our support team to help our customers succeed. You will be the first point of contact
+                            for users, providing helpful and friendly assistance to ensure a great experience with our
+                            services.</p>
+                        <a href="https://www.linkedin.com/jobs/search/?currentJobId=4209880721&keywords=Customer%20Support%20Specialist&origin=JOB_SEARCH_PAGE_SEARCH_BUTTON"
+                            target="_blank" class="job-apply-btn">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonial">
+        <div class="sectionOverlay" id="testimonialsOverlay" style="background: rgba(0 ,0, 0, 0.5)"></div>
+        <div id="outerTestimonial" class="outerSection">
+            <div id="testimonialContainer" class="sectionContainer testimonialImageBg">
+                <div id="testimonialContent" class="sectionContent container-fluid">
+                    <div id="testimonialTop" class="row">
+                        <div class="col-md-offset-2 col-md-8 col-sm-10 col-sm-offset-1 text-center">
+                            <div id="testimonialTitleWrap">
+                                <h2 id="testimonialTitle">Our Testimonials</h2>
+                            </div>
+                            <div id="testimonialHrWrap">
+                                <hr id="testimonialHr">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                            <div class="carousel slide" data-ride="carousel" id="quote-carousel" data-keyboard="false">
+                                <ol id="testimonialIndicatorContainer" class="carousel-indicators">
+                                    <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#quote-carousel" data-slide-to="1"></li>
+                                    <li data-target="#quote-carousel" data-slide-to="2"></li>
+                                </ol>
+                                <div id="testimonialRowContainer" class="carousel-inner">
+                                    <div class="item active row">
+                                        <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 text-center">
+                                            <blockquote class="testimonialCard">
+                                                <p class="testimonialParagraph">Amazing job! I would recommend these
+                                                    services to anyone looking for some help. No better solution out
+                                                    there.</p>
+                                                <footer class="blockquoteSource">saad</footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                    <div class="item row">
+                                        <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 text-center">
+                                            <blockquote class="testimonialCard">
+                                                <p class="testimonialParagraph">Such a pleasant experience working with
+                                                    the team here. Highly recommend their services to anyone.</p>
+                                                <footer class="blockquoteSource">adam</footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                    <div class="item row">
+                                        <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 text-center">
+                                            <blockquote class="testimonialCard">
+                                                <p class="testimonialParagraph">Such a pleasure working with the team
+                                                    here. 11 out of 10 EASY! You should definitely get in touch with
+                                                    them.</p>
+                                                <footer class="blockquoteSource">azar</footer>
+                                            </blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a data-slide="prev" href="#quote-carousel"
+                                    class="testimonialCarouselIcons left carousel-control"><i
+                                        class="testimonialCarouselIcon fas fa-chevron-left"></i></a>
+                                <a data-slide="next" href="#quote-carousel"
+                                    class="testimonialCarouselIcons right carousel-control"><i
+                                        class="testimonialCarouselIcon fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <div class="sectionOverlay" id="blogOverlay" style="background: rgba(0, 0, 0, 0.5)"></div>
+        <div id="outerBlog" class="outerSection">
+            <div id="blogContainer" class="sectionContainer blogImageBg">
+                <div id="blogContent" class="sectionContent container-fluid">
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1">
+                            <div id="blogTitleWrap">
+                                <h2 id="blogTitle">Our Blog</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="noPostBlog" class="row">
+                        <div class="col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1">
+                            <h4>For Job Seekers (Resume Advice)</h4>
+                            <p class="aboutParagraph">In a competitive job market, your resume is your first and most
+                                critical impression. Learn how to optimize for applicant tracking systems (ATS),
+                                leverage powerful action verbs, and quantify your achievements to demonstrate real
+                                impact.</p>
+
+                            <h4>For Job Seekers (Interview Skills)</h4>
+                            <p class="aboutParagraph">From video screenings to technical challenges, being prepared is
+                                key. We'll cover how to set up for a professional video call, use the STAR method to
+                                answer behavioral questions confidently, and ask insightful questions to show you’re the
+                                right fit.</p>
+
+                            <h4>For Employers (Hiring Strategy)</h4>
+                            <p class="aboutParagraph">Attracting top-tier candidates requires more than a competitive
+                                salary. Discover how to create compelling job descriptions, highlight unique company
+                                perks, and implement a supportive onboarding process that helps you hire and retain the
+                                best.</p>
+
+                            <div id="aboutButtons"><a class="aboutButton blog">Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="sectionOverlay" id="contactOverlay"></div>
+        <div id="outerContact" class="outerSection">
+            <div id="contactContainer" class="sectionContainer">
+                <div id="contactContent" class="sectionContent container-fluid">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                            <div id="contactTitleWrap">
+                                <h2 id="contactTitle">Get In Touch</h2>
+                            </div>
+                            <div id="contactTitleHrWrap">
+                                <hr id="contactTitleHr">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+                            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                                <input type="hidden" name="access_key" value="1990dd75-8a28-4837-8527-a51c2b96998b">
+                                <input type="hidden" name="subject" value="New Inquiry from workway Website">
+
+                                <div class="row">
+                                    <div class="contactInputWrap form-group col-sm-6 col-xs-12">
+                                        <label class="contactLabel" for="contactName">Name</label>
+                                        <input id="contactName" type="text" name="name"
+                                            class="contactFormInput form-control" required>
+                                    </div>
+                                    <div class="contactInputWrap form-group col-sm-6 col-xs-12">
+                                        <label class="contactLabel" for="contactEmail">Email</label>
+                                        <input id="contactEmail" type="email" name="email"
+                                            class="contactFormInput form-control" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="contactInputWrap form-group col-sm-12 col-xs-12">
+                                        <label class="contactLabel" for="contactMessage">Message</label>
+                                        <textarea id="contactMessage" name="message"
+                                            class="contactFormInput form-control" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="contactInputWrap form-group col-sm-12 col-xs-12">
+                                        <div id="contactButtons"><button type="submit" class="contactButton">Send
+                                                Message</button></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer">
+        <h4 class="pageFooter">© 2025 workway</h4>
+    </div>
+
+    <!-- CDN JS Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.0.4/jquery.mousewheel.pack.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+    <!-- Custom Page Scripts -->
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>
